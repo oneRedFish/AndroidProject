@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class StartActivity extends Activity {
-    protected static final String ACTIVITY_NAME = "StartActivity";
+public class ListItemsActivity extends Activity {
+    protected static final String ACTIVITY_NAME = "ListItemsActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(R.layout.activity_list_items);
         Log.i(ACTIVITY_NAME, "In onCreate");
     }
 
