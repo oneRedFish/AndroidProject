@@ -15,6 +15,7 @@ public class LoginActivity extends Activity {
     EditText loginName;
     EditText password;
     Button Login;
+    SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +28,16 @@ public class LoginActivity extends Activity {
         password = (EditText) findViewById(R.id.password);
         Login = (Button) findViewById(R.id.login_button);
 
+        //show the value which is stored in sharedPref
+        sharedPref = getSharedPreferences("userinfo", Context.MODE_PRIVATE);
+        String email = sharedPref.getString("loginName", "email@domain.com");
+        loginName.setText(email);
+
         //Save the userinfo
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SharedPreferences sharedPref = getSharedPreferences("userinfo", Context.MODE_PRIVATE);
+                // SharedPreferences sharedPref = getSharedPreferences("userinfo", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putString("loginName", loginName.getText().toString());
                 editor.putString("passWord", password.getText().toString());
@@ -42,10 +48,7 @@ public class LoginActivity extends Activity {
             }
         });
 
-        //show the value which is stored in sharedPref
-        SharedPreferences sharedPref = getSharedPreferences("userinfo", Context.MODE_PRIVATE);
-        String email = sharedPref.getString("loginName", "email@domain.com");
-        loginName.setText(email);
+
     }
 
     @Override

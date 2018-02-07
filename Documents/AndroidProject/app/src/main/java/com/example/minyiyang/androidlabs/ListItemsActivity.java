@@ -66,22 +66,23 @@ public class ListItemsActivity extends Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean b) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ListItemsActivity.this);
                 // 2. Chain together various setter methods to set the dialog characteristics
-                builder.setMessage(R.string.dialog_message); //Add a dialog message to strings.xml
-                builder.setTitle(R.string.dialog_title);
-                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                builder.setMessage(R.string.dialog_message) //Add a dialog message to strings.xml
+                        .setTitle(R.string.dialog_title)
+                        .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // User clicked OK button
                         Intent resultIntent = new Intent();
                         resultIntent.putExtra("Response", "Here is my response");
                         setResult(Activity.RESULT_OK, resultIntent);
+                        //ck_box.setChecked(false);
                         ListItemsActivity.this.finish();
                     }
                 });
                 builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
-                        ck_box.setChecked(false);
                         dialog.cancel();
+                        //ck_box.setChecked(false);
                     }
                 });
 
