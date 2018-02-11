@@ -9,6 +9,8 @@
     <string name="text_switch">What does this do?</string>
     <string name="dialog_message">"Do you want to finish the activity?"</string>
     <string name="dialog_title">"Finish Activity"</string>
+    <string name="button_chat">"Start Chat"</string>
+    <string name="button_send">"SEND"</string>
     <string name="ok">"ok"</string>
     <string name="cancel">"cancel"</string>
 </resources>

@@ -10,6 +10,8 @@
     <string name="text_switch">Qu\'est-ce que ça fait?</string>
     <string name="dialog_message">"Voulez-vous finir l'activité?"</string>
     <string name="dialog_title">"Finir l'activité"</string>
+    <string name="button_chat">"Démarrer la discussion"</string>
+    <string name="button_send">"ENVOYER"</string>
     <string name="ok">"D'accord"</string>
     <string name="cancel">"Annuler"</string>
 </resources>

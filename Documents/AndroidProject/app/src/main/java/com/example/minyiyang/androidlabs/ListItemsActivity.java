@@ -74,7 +74,6 @@ public class ListItemsActivity extends Activity {
                         Intent resultIntent = new Intent();
                         resultIntent.putExtra("Response", "Here is my response");
                         setResult(Activity.RESULT_OK, resultIntent);
-                        //ck_box.setChecked(false);
                         ListItemsActivity.this.finish();
                     }
                 });
@@ -82,7 +81,6 @@ public class ListItemsActivity extends Activity {
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
                         dialog.cancel();
-                        //ck_box.setChecked(false);
                     }
                 });
 
