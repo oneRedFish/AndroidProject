@@ -15,6 +15,7 @@ public class LoginActivity extends Activity {
     EditText loginName;
     EditText password;
     Button Login;
+
     SharedPreferences sharedPref;
 
     @Override
@@ -27,6 +28,7 @@ public class LoginActivity extends Activity {
         loginName = (EditText) findViewById(R.id.login_name);
         password = (EditText) findViewById(R.id.password);
         Login = (Button) findViewById(R.id.login_button);
+
 
         //show the value which is stored in sharedPref
         sharedPref = getSharedPreferences("userinfo", Context.MODE_PRIVATE);
@@ -47,7 +49,6 @@ public class LoginActivity extends Activity {
                 startActivity(intent);
             }
         });
-
 
     }
 
