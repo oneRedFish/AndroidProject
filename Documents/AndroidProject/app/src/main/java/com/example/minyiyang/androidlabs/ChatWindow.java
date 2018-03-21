@@ -43,7 +43,7 @@ public class ChatWindow extends Activity {
         //initialize ChatDatabaseHelper
         mydb = new ChatDatabaseHelper(this);
         final SQLiteDatabase db = mydb.getWritableDatabase();
-        Cursor cursor = db.query(false,ChatDatabaseHelper.TABLE_NAME , new String[] {"KEY_ID","KEY_MESSAGE"}, null, null, null, null, null, null);
+        Cursor cursor = db.query(false, ChatDatabaseHelper.TABLE_NAME, new String[]{ChatDatabaseHelper.KEY_ID, ChatDatabaseHelper.KEY_MESSAGE}, null, null, null, null, null, null);
         cursor.moveToFirst();
 
         while(!cursor.isAfterLast()) {
@@ -121,6 +121,7 @@ public class ChatWindow extends Activity {
                 ContentValues cv = new ContentValues();
                 cv.put(ChatDatabaseHelper.KEY_MESSAGE, send_text.getText().toString());
                 db.insert(ChatDatabaseHelper.TABLE_NAME,null,cv);
+                //reset data
                 send_text.setText("");
 
             }

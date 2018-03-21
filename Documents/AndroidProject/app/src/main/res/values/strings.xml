@@ -4,12 +4,17 @@
     <string name="ButtonText">I\’m a button</string>
     <string name="TextView_login">Login</string>
     <string name="TextView_password">password</string>
+    <string name="TextView_curtem">current temperature</string>
+    <string name="TextView_mintem">min temperature</string>
+    <string name="TextView_maxtem">max temperature</string>
+    <string name="TextView_speed">wind speed</string>
     <string name="hint_login">login name</string>
     <string name="hint_password">password</string>
     <string name="text_switch">What does this do?</string>
     <string name="dialog_message">"Do you want to finish the activity?"</string>
     <string name="dialog_title">"Finish Activity"</string>
     <string name="button_chat">"Start Chat"</string>
+    <string name="button_weather">"go to WeatherForecast"</string>
     <string name="button_send">"SEND"</string>
     <string name="ok">"ok"</string>
     <string name="cancel">"cancel"</string>

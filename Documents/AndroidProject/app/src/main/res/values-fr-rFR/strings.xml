@@ -5,12 +5,17 @@
     <string name="ButtonText">Je\'suis un bouton</string>
     <string name="TextView_login">S\'identifier</string>
     <string name="TextView_password">mot de passe</string>
+    <string name="TextView_curtem">température actuelle</string>
+    <string name="TextView_mintem">température min</string>
+    <string name="TextView_maxtem">température maximale</string>
+    <string name="TextView_speed">vitesse du vent</string>
     <string name="hint_login">identifiant</string>
     <string name="hint_password">mot de passe</string>
     <string name="text_switch">Qu\'est-ce que ça fait?</string>
     <string name="dialog_message">"Voulez-vous finir l'activité?"</string>
     <string name="dialog_title">"Finir l'activité"</string>
     <string name="button_chat">"Démarrer la discussion"</string>
+    <string name="button_weather">"aller à WeatherForecast"</string>
     <string name="button_send">"ENVOYER"</string>
     <string name="ok">"D'accord"</string>
     <string name="cancel">"Annuler"</string>
