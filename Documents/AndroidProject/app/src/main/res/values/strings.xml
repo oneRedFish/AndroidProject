@@ -16,6 +16,7 @@
     <string name="button_chat">"Start Chat"</string>
     <string name="button_weather">"go to WeatherForecast"</string>
     <string name="button_send">"SEND"</string>
+    <string name="button_delete">"Delete this message"</string>
     <string name="ok">"ok"</string>
     <string name="cancel">"cancel"</string>
 </resources>

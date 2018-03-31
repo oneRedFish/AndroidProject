@@ -7,7 +7,6 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -192,7 +191,7 @@ public class WeatherForecast extends Activity {
 
         @Override
         protected void onPostExecute(String result) {
-            pb.setVisibility(VISIBLE);
+            pb.setVisibility(View.INVISIBLE);
             TextView_curtem.setText(" Current temperature is: " + current_temp);
             TextView_maxtem.setText(" Max temperature is: " + max);
             TextView_mintem.setText(" Min temperature is: " + min);

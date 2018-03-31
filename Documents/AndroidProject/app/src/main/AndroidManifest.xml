@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.minyiyang.androidlabs">
 
+    <!-- give permission -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- set application can check various widths -->
+    <supports-screens android:requiresSmallestWidthDp="600" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -14,10 +18,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,14 +33,18 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".LoginActivity">
-            <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
 
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".ChatWindow" />
-        <activity android:name=".WeatherForecast"></activity>
+        <activity android:name=".WeatherForecast" />
+        <activity android:name=".MessageDetails" />
+        <activity android:name=".MessageFragment"></activity>
     </application>
 
 </manifest>

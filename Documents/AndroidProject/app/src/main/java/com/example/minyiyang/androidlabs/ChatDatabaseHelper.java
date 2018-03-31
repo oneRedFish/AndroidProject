@@ -35,5 +35,4 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
         Log.i("ChatDatabaseHelper", "Calling onUpgrade, oldVersion=" + oldVersion + " newVersion=" + newVersion);
     }
 
-
 }

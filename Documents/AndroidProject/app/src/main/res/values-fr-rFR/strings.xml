@@ -17,6 +17,7 @@
     <string name="button_chat">"Démarrer la discussion"</string>
     <string name="button_weather">"aller à WeatherForecast"</string>
     <string name="button_send">"ENVOYER"</string>
+    <string name="button_delete">"Supprimer ce message"</string>
     <string name="ok">"D'accord"</string>
     <string name="cancel">"Annuler"</string>
 </resources>

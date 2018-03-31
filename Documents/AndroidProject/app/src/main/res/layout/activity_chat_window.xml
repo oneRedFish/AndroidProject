@@ -36,4 +36,5 @@
         android:text="@string/button_send"
         android:id="@+id/button_send" />
 
+
 </RelativeLayout>
