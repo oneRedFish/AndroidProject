@@ -18,6 +18,7 @@
     <string name="button_weather">"aller à WeatherForecast"</string>
     <string name="button_send">"ENVOYER"</string>
     <string name="button_delete">"Supprimer ce message"</string>
+    <string name="button_toolbar">"Barre d'outils de test"</string>
     <string name="ok">"D'accord"</string>
     <string name="cancel">"Annuler"</string>
 </resources>

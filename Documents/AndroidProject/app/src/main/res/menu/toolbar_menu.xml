@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cherry"
+        android:title="cherry"
+        android:icon="@drawable/icon_cherry"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/citrus"
+        android:title="citrus"
+        android:icon="@drawable/icon_citrus"
+        android:orderInCategory="102"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/strawberry"
+        android:title="strawberry"
+        android:icon="@drawable/icon_strawberry"
+        android:orderInCategory="103"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="104"
+        android:title="About"
+        app:showAsAction="never"></item>
+</menu>

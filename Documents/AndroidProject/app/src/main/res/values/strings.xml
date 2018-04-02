@@ -17,6 +17,10 @@
     <string name="button_weather">"go to WeatherForecast"</string>
     <string name="button_send">"SEND"</string>
     <string name="button_delete">"Delete this message"</string>
+    <string name="button_toolbar">"Test Toolbar"</string>
     <string name="ok">"ok"</string>
     <string name="cancel">"cancel"</string>
+    <string name="dialogTitle">"Do you want to go back?"</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="two">two</string>
 </resources>
